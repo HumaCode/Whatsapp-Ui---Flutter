@@ -5,6 +5,12 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "whatsapp_ui_web",
+            "request": "launch",
+            "deviceId": "chrome",
+            "type": "dart"
+        },
+        {
             "name": "whatsapp_ui",
             "request": "launch",
             "type": "dart"

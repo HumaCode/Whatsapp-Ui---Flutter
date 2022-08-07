@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_ui/widgets/contacts_list.dart';
+import 'package:whatsapp_ui/widgets/web_profile_bar.dart';
 
 class WebScreenLayout extends StatelessWidget {
   const WebScreenLayout({Key? key}) : super(key: key);
@@ -15,6 +16,8 @@ class WebScreenLayout extends StatelessWidget {
               child: Column(
                 children: [
                   // web profile bar
+                  WebProfileBar(),
+
                   // web search
                   ContactsList(),
                 ],
@@ -30,6 +33,7 @@ class WebScreenLayout extends StatelessWidget {
                 fit: BoxFit.cover,
               ),
             ),
+            child: Center(child: Text("Chat Here")),
           ),
         ],
       ),
