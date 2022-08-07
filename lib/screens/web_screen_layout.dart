@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_ui/widgets/chat_list.dart';
 import 'package:whatsapp_ui/widgets/contacts_list.dart';
 import 'package:whatsapp_ui/widgets/web_chat_appbar.dart';
 import 'package:whatsapp_ui/widgets/web_profile_bar.dart';
@@ -44,6 +45,8 @@ class WebScreenLayout extends StatelessWidget {
                 WebChatAppbar(),
 
                 // Chat List
+                Expanded(child: ChatList()),
+
                 // Message Input Box
               ],
             ),
